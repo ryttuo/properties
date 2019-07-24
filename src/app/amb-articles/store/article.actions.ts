@@ -12,10 +12,14 @@ export class LoadArticlesAction implements Action {
 
 export class LoadArticlesSuccessfulAction implements Action {
   readonly type = ArticleActionTypes.LoadArticlesSuccessful;
+  constructor(public payload: boolean) {
+  }
 }
 
 export class FailArticlesAction implements Action {
   readonly type = ArticleActionTypes.FailArticles;
+  constructor(public payload: boolean) {
+  }
 }
 
 export type ArticleActions = LoadArticlesAction |

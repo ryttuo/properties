@@ -12,8 +12,13 @@ export const initialState: ArticleState = {
 export function articleReducer(state = initialState, action: ArticleActions): ArticleState {
   switch (action.type) {
 
-    case ArticleActionTypes.LoadArticles:
-      return state;
+    case ArticleActionTypes.LoadArticlesSuccessful:
+      return Object.assign({}, state, {
+        properties: action.payload
+      });
+
+    case ArticleActionTypes.FailArticles:
+      return Object.assign({}, state, initialState);
 
 
     default:
