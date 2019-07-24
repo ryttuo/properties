@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AmbListComponent } from './amb-list.component';
+import { AmbArticlesComponent } from './amb-articles.component';
 
 const routes: Routes = [
-  { path : '', component : AmbListComponent }
+  { path : '', component : AmbArticlesComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AmbListRoutingModule { }
+export class AmbArticlesRoutingModule { }

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AmbListComponent } from './amb-list.component';
+import { AmbArticlesComponent } from './amb-articles.component';
 
-describe('AmbListComponent', () => {
-  let component: AmbListComponent;
-  let fixture: ComponentFixture<AmbListComponent>;
+describe('AmbArticlesComponent', () => {
+  let component: AmbArticlesComponent;
+  let fixture: ComponentFixture<AmbArticlesComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AmbListComponent ]
+      declarations: [ AmbArticlesComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AmbListComponent);
+    fixture = TestBed.createComponent(AmbArticlesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -15,14 +15,14 @@ const routes: Routes = [
     loadChildren: './amb-home/amb-home.module#AmbHomeModule'
   },
   {
-    path: 'contact',
+    path: 'articles',
     pathMatch: 'full',
-    loadChildren: './amb-contact/amb-contact.module#AmbContactModule'
+    loadChildren: './amb-articles/amb-articles.module#AmbArticlesModule'
   },
   {
-    path: 'list',
+    path: 'properties',
     pathMatch: 'full',
-    loadChildren: './amb-list/amb-list.module#AmbListModule'
+    loadChildren: './amb-properties/amb-properties.module#AmbPropertiesModule'
   },
   { path: '**', redirectTo: '' },
 
