@@ -15,6 +15,6 @@ import { PropertyEffects } from './store/property.effects';
     StoreModule.forFeature('property', fromProperty.propertyReducer),
     EffectsModule.forFeature([PropertyEffects])
   ],
-  declarations: [AmbPropertiesComponent]
+  declarations: [AmbPropertiesComponent],
 })
 export class AmbPropertiesModule { }

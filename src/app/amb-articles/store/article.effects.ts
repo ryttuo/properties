@@ -14,19 +14,19 @@ export class ArticleEffects {
     private articlesService: ArticleService,
   ) { }
 
-  @Effect()
-  getArticles$ = this.actions$.pipe(
-    ofType(fromArticles.ArticleActionTypes.LoadArticles),
-    switchMap((action: any) => {
-      return this.articlesService.getArticles().pipe(
-        map(articles => {
+  // @Effect()
+  // getArticles$ = this.actions$.pipe(
+  //   ofType(fromArticles.ArticleActionTypes.LoadArticles),
+  //   switchMap((action: any) => {
+  //     return this.articlesService.getArticles().pipe(
+  //       map(articles => {
 
-          return new fromArticles.LoadArticlesSuccessfulAction(articles);
+  //         return new fromArticles.LoadArticlesSuccessfulAction(articles);
 
-        }),
-        catchError(error => <any>of(new fromArticles.FailArticlesAction(error)))
-      );
-    }),
-  );
+  //       }),
+  //       catchError(error => <any>of(new fromArticles.FailArticlesAction(error)))
+  //     );
+  //   }),
+  // );
 
 }

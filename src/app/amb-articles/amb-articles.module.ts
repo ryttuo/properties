@@ -7,14 +7,20 @@ import { StoreModule } from '@ngrx/store';
 import * as fromArticle from './store/article.reducer';
 import { EffectsModule } from '@ngrx/effects';
 import { ArticleEffects } from './store/article.effects';
+import { ArticleService } from './store/article.service';
+import { HttpClientModule } from '@angular/common/http';
+import { MaterialModule } from '../shared/material/material.module';
 
 @NgModule({
   imports: [
     CommonModule,
     AmbArticlesRoutingModule,
-    StoreModule.forFeature('article', fromArticle.articleReducer),
+    HttpClientModule,
+    MaterialModule,
+    StoreModule.forFeature(fromArticle.ARTICLE_FEATURE_NAME, fromArticle.articleReducer),
     EffectsModule.forFeature([ArticleEffects])
   ],
-  declarations: [AmbArticlesComponent]
+  declarations: [AmbArticlesComponent],
+  providers: [ArticleService]
 })
 export class AmbArticlesModule { }

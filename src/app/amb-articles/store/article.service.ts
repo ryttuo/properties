@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { CONSTANTS } from 'src/app/app.constants';
 import { HttpClient } from '@angular/common/http';
 import { catchError } from 'rxjs/operators';
-import { throwError, Observable } from 'rxjs';
+import { throwError, Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +10,6 @@ import { throwError, Observable } from 'rxjs';
 export class ArticleService {
 
   endPoints = CONSTANTS['URLS'];
-
 
   constructor(private http: HttpClient) { }
 
