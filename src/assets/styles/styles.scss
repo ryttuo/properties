@@ -1,32 +1,41 @@
-@import 'reset';
-@import 'themes';
+@import "reset";
+@import "themes";
 
-body { margin: 0; }
-
+body {
+  margin: 0;
+}
 
 .list-content {
-    display: flex;
-    flex-wrap: wrap;
-    width: calc(100% - 20px);
-    justify-content: space-between;
-    padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% - 20px);
+  justify-content: space-between;
+  padding: 10px;
+  .custom-card {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .list-content {
     .custom-card {
-      margin-bottom: 10px;
+      width: calc(50% - 52px);
     }
   }
-  
-  @media screen and (min-width: 600px) {
-    .list-content {
-      .custom-card {
-        width: calc(50% - 52px);
-      }
+}
+
+@media screen and (min-width: 1024px) {
+  .list-content {
+    .custom-card {
+      width: calc(25% - 52px);
     }
   }
-  
-  @media screen and (min-width: 1440px) {
-    .list-content {
-      .custom-card {
-        width: calc(25% - 52px);
-      }
-    }
-  }
+}
+
+.mat-card-image {
+    height: 250px;
+}
+
+.mat-card-header {
+    height: 50px;
+}

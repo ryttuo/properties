@@ -5,6 +5,7 @@ import { AmbHomeRoutingModule } from './amb-home-routing.module';
 import { AmbHomeComponent } from './amb-home.component';
 import { MaterialModule } from '../shared/material/material.module';
 import { AmbArticlesModule } from '../amb-articles/amb-articles.module';
+import { AmbPropertiesModule } from '../amb-properties/amb-properties.module';
 
 @NgModule({
   imports: [
@@ -12,6 +13,7 @@ import { AmbArticlesModule } from '../amb-articles/amb-articles.module';
     AmbHomeRoutingModule,
     MaterialModule,
     AmbArticlesModule,
+    AmbPropertiesModule,
   ],
   declarations: [AmbHomeComponent]
 })
