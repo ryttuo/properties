@@ -1,6 +1,6 @@
-<div class="home-content">
+<div [ngClass]="{ 'list-content' : listContent }">
 
-  <mat-card class="home-card">
+  <mat-card class="custom-card">
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
       <mat-card-title>Angular Material @ngrx</mat-card-title>
@@ -18,5 +18,7 @@
       <button color="accent" mat-raised-button>LIKE</button>
     </mat-card-actions>
   </mat-card>
+
+  <!-- <mat-tab *ngFor="let category of casinoCategories$ | async" [label]="category.label"></mat-tab> -->
 
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { ArticleStoreInterface, getArticles } from './store/article.selectors';
 import { LoadArticlesAction } from './store/article.actions';
@@ -14,6 +14,7 @@ import { SetAppTitle } from '../core/layout/layout.actions';
 export class AmbArticlesComponent implements OnInit {
 
   articlesData$: Observable<Array<any>>;
+  @Input() listContent = true;
 
   constructor(
     private articleStore: Store<ArticleStoreInterface>,
@@ -22,7 +23,9 @@ export class AmbArticlesComponent implements OnInit {
 
   ngOnInit() {
 
-    this.layoutStore.dispatch(new SetAppTitle('articles'));
+    if (this.listContent) {
+      this.layoutStore.dispatch(new SetAppTitle('articles'));
+    }
 
     this.articleStore.dispatch(new LoadArticlesAction());
 

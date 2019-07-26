@@ -2,3 +2,31 @@
 @import 'themes';
 
 body { margin: 0; }
+
+
+.list-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 20px);
+    justify-content: space-between;
+    padding: 10px;
+    .custom-card {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media screen and (min-width: 600px) {
+    .list-content {
+      .custom-card {
+        width: calc(50% - 52px);
+      }
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .list-content {
+      .custom-card {
+        width: calc(25% - 52px);
+      }
+    }
+  }
