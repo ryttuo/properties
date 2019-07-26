@@ -1,4 +1,4 @@
-<div [ngClass]="{ 'list-content' : listContent }">
+<div class="list-content">
 
   <mat-card class="custom-card" *ngFor="let article of (articlesData$ | async)?.hits?.hits" >
     <mat-card-header>

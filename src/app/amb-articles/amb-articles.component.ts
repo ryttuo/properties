@@ -3,7 +3,7 @@ import { Store, select } from '@ngrx/store';
 import { ArticleStoreInterface, getArticles } from './store/article.selectors';
 import { LoadArticlesAction } from './store/article.actions';
 import { Observable } from 'rxjs';
-import { AppState } from '../core/appState';
+import { AppState, getAppTitle } from '../core/appState';
 import { SetAppTitle } from '../core/layout/layout.actions';
 
 @Component({
@@ -26,6 +26,10 @@ export class AmbArticlesComponent implements OnInit {
     if (this.listContent) {
       this.layoutStore.dispatch(new SetAppTitle('articles'));
     }
+
+    this.layoutStore.select(getAppTitle).subscribe(title => {
+
+    });
 
     this.articleStore.dispatch(new LoadArticlesAction());
 
