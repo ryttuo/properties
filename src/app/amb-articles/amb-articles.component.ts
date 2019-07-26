@@ -17,8 +17,8 @@ export class AmbArticlesComponent implements OnInit {
   @Input() listContent = true;
 
   constructor(
+    private layoutStore: Store<AppState>,
     private articleStore: Store<ArticleStoreInterface>,
-    private layoutStore: Store<AppState>
   ) { }
 
   ngOnInit() {
@@ -26,10 +26,6 @@ export class AmbArticlesComponent implements OnInit {
     if (this.listContent) {
       this.layoutStore.dispatch(new SetAppTitle('articles'));
     }
-
-    this.layoutStore.select(getAppTitle).subscribe(title => {
-
-    });
 
     this.articleStore.dispatch(new LoadArticlesAction());
 

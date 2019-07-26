@@ -7,14 +7,19 @@ import { StoreModule } from '@ngrx/store';
 import * as fromProperty from './store/property.reducer';
 import { EffectsModule } from '@ngrx/effects';
 import { PropertyEffects } from './store/property.effects';
+import { MaterialModule } from '../shared/material/material.module';
+import { PropertyService } from './store/property.service';
 
 @NgModule({
   imports: [
     CommonModule,
     AmbPropertiesRoutingModule,
-    StoreModule.forFeature('property', fromProperty.propertyReducer),
+    MaterialModule,
+    StoreModule.forFeature(fromProperty.PROPERTY_FEATURE_NAME, fromProperty.propertyReducer),
     EffectsModule.forFeature([PropertyEffects])
   ],
   declarations: [AmbPropertiesComponent],
+  providers: [PropertyService],
+  exports:[AmbPropertiesComponent]
 })
 export class AmbPropertiesModule { }

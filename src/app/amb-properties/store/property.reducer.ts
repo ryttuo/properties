@@ -9,6 +9,8 @@ export const initialState: PropertyState = {
   properties: [],
 };
 
+export const PROPERTY_FEATURE_NAME = 'properties';
+
 export function propertyReducer(state = initialState, action: PropertyActions): PropertyState {
   switch (action.type) {
 
