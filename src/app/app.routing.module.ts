@@ -8,12 +8,6 @@ const routes: Routes = [
       pathMatch: 'full',
       loadChildren: './amb-home/amb-home.module#AmbHomeModule'
   },
-  // { path: '', redirectTo: 'home', pathMatch: 'full' },
-  {
-    path: 'home',
-    pathMatch: 'full',
-    loadChildren: './amb-home/amb-home.module#AmbHomeModule'
-  },
   {
     path: 'articles',
     pathMatch: 'full',

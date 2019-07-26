@@ -21,6 +21,7 @@ import { MaterialModule } from '../shared/material/material.module';
     EffectsModule.forFeature([ArticleEffects])
   ],
   declarations: [AmbArticlesComponent],
-  providers: [ArticleService]
+  providers: [ArticleService],
+  exports:[AmbArticlesComponent]
 })
 export class AmbArticlesModule { }
