@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Store } from '@ngrx/store';
-import { ArticleStoreInterface } from './store/article.selectors';
+import { Store, select } from '@ngrx/store';
+import { ArticleStoreInterface, getArticles } from './store/article.selectors';
 import { LoadArticlesAction } from './store/article.actions';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'amb-articles',
@@ -10,6 +11,8 @@ import { LoadArticlesAction } from './store/article.actions';
 })
 export class AmbArticlesComponent implements OnInit {
 
+  articlesData$: Observable<Array<any>>;
+
   constructor(
     private articleStore: Store<ArticleStoreInterface>,
   ) { }
@@ -17,6 +20,8 @@ export class AmbArticlesComponent implements OnInit {
   ngOnInit() {
 
     this.articleStore.dispatch(new LoadArticlesAction());
+
+    this.articlesData$ = this.articleStore.pipe(select(getArticles));
 
   }
 

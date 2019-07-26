@@ -16,7 +16,7 @@ export function articleReducer(state = initialState, action: ArticleActions): Ar
 
     case ArticleActionTypes.LoadArticlesSuccessful:
       return Object.assign({}, state, {
-        properties: action.payload
+        articles: action.payload
       });
 
     case ArticleActionTypes.FailArticles:
