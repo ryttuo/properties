@@ -1,0 +1,19 @@
+button {
+  color: white;
+  &.facebook {
+    background: #314a7e;
+  }
+  &.linkedin  {
+    background: #0077B5;
+  }
+  &.twitter {
+    background: #00ACED;
+  }
+  &.website {
+    background: #4A4A4A;
+  }
+  &.email {
+    border: 1px solid #4A4A4A;
+    color: black;
+  }
+}
