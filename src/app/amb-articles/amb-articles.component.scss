@@ -1,0 +1,26 @@
+@import '../../assets/styles/styles.scss';
+
+.content {
+  height: 150px;
+  overflow: auto;
+}
+
+.home-content {
+    @extend .list-content;
+}
+
+@media screen and (min-width: 1024px) {
+  .home-content {
+    .custom-card {
+      width: calc(100% - 52px);
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .home-content {
+    .custom-card {
+      width: calc(50% - 52px);
+    }
+  }
+}

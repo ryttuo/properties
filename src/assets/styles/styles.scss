@@ -39,3 +39,11 @@ body {
 .mat-card-header {
     height: 50px;
 }
+
+.mat-card-header-text {
+    margin: 0 !important;
+    text-transform: uppercase;
+    .mat-card-title {
+        font-weight: bold;
+    }
+}
