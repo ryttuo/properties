@@ -7,7 +7,7 @@ export interface LayoutState {
 
 const initialState: LayoutState = {
     showSidenav: false,
-    appTitle: 'home',
+    appTitle: 'profile',
 };
 
 export function reducer(state: LayoutState = initialState, action: LayoutActions.LayoutActions): LayoutState {
