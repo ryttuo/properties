@@ -14,7 +14,7 @@ export class AmbHomeComponent implements OnInit {
 
   ngOnInit() {
 
-    this.layoutStore.dispatch(new SetAppTitle('home'));
+    this.layoutStore.dispatch(new SetAppTitle('profile'));
 
   }
 

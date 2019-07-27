@@ -18,3 +18,7 @@ button {
     color: black;
   }
 }
+
+/deep/ .mat-list-item-content {
+  padding: 0 12px !important;
+}

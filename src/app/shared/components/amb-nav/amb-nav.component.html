@@ -3,7 +3,7 @@
     [opened]="showSideNav$ | async" [mode]="'push'">
     <mat-toolbar color="primary">Menu</mat-toolbar>
     <mat-nav-list (click)="closeSideNav()">
-      <a mat-list-item [routerLink]="['/']">home</a>
+      <a mat-list-item [routerLink]="['/']">profile</a>
       <mat-divider></mat-divider>
       <a mat-list-item [routerLink]="['/articles']">articles</a>
       <mat-divider></mat-divider>
@@ -16,7 +16,7 @@
       <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="openSideNav()">
         <mat-icon aria-label="Side nav toggle icon"> {{ (showSideNav$ | async ) ? 'clear' : 'menu' }} </mat-icon>
       </button>
-      <span>App Name</span>
+      <span>Profile</span>
       <button mat-icon-button [matMenuTriggerFor]="menu">
         <mat-icon>more_vert</mat-icon>
       </button>
