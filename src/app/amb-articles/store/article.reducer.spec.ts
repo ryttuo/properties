@@ -1,11 +1,11 @@
-import { reducer, initialState } from './article.reducer';
+import { articleReducer, initialState } from './article.reducer';
 
 describe('Article Reducer', () => {
   describe('an unknown action', () => {
     it('should return the previous state', () => {
       const action = {} as any;
 
-      const result = reducer(initialState, action);
+      const result = articleReducer(initialState, action);
 
       expect(result).toBe(initialState);
     });
