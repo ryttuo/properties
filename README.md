@@ -29,13 +29,13 @@ In the theme.scss you can see curent color palettes, just change primary, accent
 
 ## RUN web browser without CORS
 
-### OSX type in terminal: **open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security**
+- OSX type in terminal: **open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security**
 
-### Windows **[PATH_TO_CHROME]\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=~/chromeTemp**
+- Windows **[PATH_TO_CHROME]\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=~/chromeTemp**
 
-### LINUX **google-chrome --disable-web-security**
+- LINUX **google-chrome --disable-web-security**
 
-#### Reference [here](https://alfilatov.com/posts/run-chrome-without-cors)
+- Reference [here](https://alfilatov.com/posts/run-chrome-without-cors)
 
 ## Local Enviroment
 
