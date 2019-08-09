@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Demo
 
-You can see this demo [here](http://amb.ryttuo.com)
+You can see this demo [here](http://labs.ryttuo.com)
 
 ## Angular Material UX Template
 
@@ -24,8 +24,18 @@ In the theme.scss you can see curent color palettes, just change primary, accent
 
 ## Install
 
-1. clone the repo `git clone git@github.com:ryttuo/angular-material-base.git`
+1. clone the repo `git clone https://github.com/ryttuo/properties`
 2. go to the project and `npm install`
+
+##RUN web browser without CORS
+
+    ### OSX type in terminal: **open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security**
+
+    ### Windows **[PATH_TO_CHROME]\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=~/chromeTemp**
+
+    ### LINUX **google-chrome --disable-web-security**
+
+    #### Reference [here](https://alfilatov.com/posts/run-chrome-without-cors)
 
 ## Local Enviroment
 
@@ -43,11 +53,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
