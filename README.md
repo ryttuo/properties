@@ -27,7 +27,7 @@ In the theme.scss you can see curent color palettes, just change primary, accent
 1. clone the repo `git clone https://github.com/ryttuo/properties`
 2. go to the project and `npm install`
 
-##RUN web browser without CORS
+## RUN web browser without CORS
 
     ### OSX type in terminal: **open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security**
 
