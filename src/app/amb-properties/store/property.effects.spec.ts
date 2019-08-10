@@ -3,6 +3,7 @@ import { provideMockActions } from '@ngrx/effects/testing';
 import { Observable } from 'rxjs';
 
 import { PropertyEffects } from './property.effects';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('PropertyEffects', () => {
   let actions$: Observable<any>;
@@ -10,6 +11,7 @@ describe('PropertyEffects', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
+      imports: [ HttpClientModule ],
       providers: [
         PropertyEffects,
         provideMockActions(() => actions$)

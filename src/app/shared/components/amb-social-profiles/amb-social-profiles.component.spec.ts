@@ -2,6 +2,7 @@
 import { fakeAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AmbSocialProfilesComponent } from './amb-social-profiles.component';
+import { MaterialModule } from '../../material/material.module';
 
 describe('AmbNavComponent', () => {
   let component: AmbSocialProfilesComponent;
@@ -9,6 +10,7 @@ describe('AmbNavComponent', () => {
 
   beforeEach(fakeAsync(() => {
     TestBed.configureTestingModule({
+      imports: [ MaterialModule ],
       declarations: [ AmbSocialProfilesComponent ]
     })
     .compileComponents();

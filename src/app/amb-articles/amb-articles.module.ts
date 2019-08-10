@@ -22,6 +22,6 @@ import { MaterialModule } from '../shared/material/material.module';
   ],
   declarations: [AmbArticlesComponent],
   providers: [ArticleService],
-  exports:[AmbArticlesComponent]
+  exports: [AmbArticlesComponent]
 })
 export class AmbArticlesModule { }

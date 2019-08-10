@@ -15,9 +15,11 @@ import { AppRoutingModule } from './app.routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { EffectsModule } from '@ngrx/effects';
 import { ArticleEffects } from './amb-articles/store/article.effects';
+import { PropertyEffects } from './amb-properties/store/property.effects';
 
 export const effects: any[] = [
   ArticleEffects,
+  PropertyEffects,
 ];
 
 @NgModule({

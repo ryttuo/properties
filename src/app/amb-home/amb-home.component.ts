@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { AppState } from '../core/appState';
-import { OpenSidenav, CloseSidenav, SetAppTitle } from '../core/layout/layout.actions';
+import { OpenSidenav, SetAppTitle } from '../core/layout/layout.actions';
 
 @Component({
   selector: 'amb-home',
