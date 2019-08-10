@@ -1,4 +1,4 @@
-# AngularMaterialBase
+# Properties with Angular Material
 
 This is a boileplate project with Angular 7, Angular Material, using [@ngrx](https://github.com/ngrx) to handle aplication state and lazy loading implementation, you can create your own Angular 7 project with everything ready to focus into coding
 
