@@ -43,7 +43,7 @@ In the theme.scss you can see curent color palettes, just change primary, accent
 
 ##Node version
 
-- Tested with node 8.12.0, but not should be problem to use more recent node version. (maybe you can use nvm to move between different versions)
+- Tested with node 8.12.0, but shouldn't be problem to use more recent node version. (maybe you can use nvm to move between different versions)
 
 ## Local Enviroment
 
