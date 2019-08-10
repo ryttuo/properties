@@ -37,6 +37,14 @@ In the theme.scss you can see curent color palettes, just change primary, accent
 
 - Reference [here](https://alfilatov.com/posts/run-chrome-without-cors)
 
+### Firefox Extension
+
+- Another good option to use CORS is this extension for firefox (https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/)
+
+##Node version
+
+- Tested with node 8.12.0, but not should be problem to use more recent node version. (maybe you can use nvm to move between different versions)
+
 ## Local Enviroment
 
 Run `ng serve` for a local environment. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
