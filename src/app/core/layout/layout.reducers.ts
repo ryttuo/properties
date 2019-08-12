@@ -5,7 +5,7 @@ export interface LayoutState {
     appTitle: string;
 }
 
-const initialState: LayoutState = {
+export const initialState: LayoutState = {
     showSidenav: false,
     appTitle: 'profile',
 };
